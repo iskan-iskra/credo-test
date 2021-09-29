@@ -1,0 +1,43 @@
+
+.CredoNavbarSearchWrapper{
+    position: relative;
+    margin: 16px 0;
+    .CredoNavbarSearch{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        outline: none;
+        border: none;
+        padding: 12px 19px;
+        background-color: var(--color-input);
+        color: var(--color-text-gray);
+        border-radius: 25px;
+        margin: 0 12px;
+        width: 150px;
+        &:focus{
+            color: var(--color-text-black);
+        }
+    }
+    .iconSearch{
+        position: absolute;
+        z-index: 10;
+        right: 20px;
+        top: calc(50% - 15px/2);
+        min-width: 15px;
+        min-height: 15px;
+        mask-repeat: none;
+        mask-size: cover;
+        mask-position: center;
+        mask-image: url('../../../img/icons/searchicon.svg');
+        background-color: var(--color-body-icons);
+    }
+}
+@media screen and (max-width: 1170px) {
+    .CredoNavbarSearchWrapper{
+        .CredoNavbarSearch{
+            width: 187px;
+            text-align: center;
+        }
+    }
+}

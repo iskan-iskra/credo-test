@@ -1,0 +1,77 @@
+.CredoNavbarButton{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 20px;
+    margin: 0 12px;
+    border-radius: 25px;
+    color: var(--color-text-white);
+    background-color: var(--color-button);
+    cursor: pointer;
+}
+
+.bg-white_tx-red{
+    background-color: var(--color-text-white);
+    color: var(--color-button);
+}
+
+.CredoNavbarLoginWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    .CredoNavbarLogin{
+        border-radius: 50%;
+        min-width: 40px;
+        min-height: 40px;
+        border: 1px solid var(--color-body-secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon{
+            width: 17px;
+            height: 17px;
+            mask-position: center;
+            mask-size: cover;
+            mask-repeat: none;
+            mask-image: url('../../../img/icons/Login.svg');
+            background-color: var(--color-body-prime);
+        }
+    }
+    .text{
+        margin-left: 9px;
+    }
+}
+.CredoNavbarBurgerButton{
+    display: none;
+    margin-left: 33px;
+    min-width: 27px;
+    min-height: 18px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    div{
+        height: 2px;
+        border-radius: 1px;
+        background-color: var(--color-button);
+    }
+    .lineL{
+        width: 100%;
+    }
+    .lineS{
+        width:74%;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .CredoNavbarBurgerButton{
+        display: flex;
+    }
+    .CredoNavbarLoginWrapper{
+        margin-left: 26px;
+        .text{
+            display: none;
+        }
+    }
+}
